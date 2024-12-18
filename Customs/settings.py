@@ -14,14 +14,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure-8%g&cru09l5k89!v&+%s99o9o_3_m=dl^9enu@rmztn2'
-SECRET_KEY =os.environ['SECRET_KEY']
+SECRET_KEY =os.environ.get['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #ALLOWED_HOSTS = []  
 
 # Production
-ALLOWED_HOSTS = ['customkicks.onrender.com', 'https://customkicks.onrender.com', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://customkicks.onrender.com', 'https://customkicks.onrender.com', 'https://localhost']
+ALLOWED_HOSTS = ['https://customkicks.up.railway.app/','customkicks.onrender.com', 'https://customkicks.onrender.com', 'localhost']
+CSRF_TRUSTED_ORIGINS = ['customkicks.up.railway.app/','https://customkicks.onrender.com', 'https://customkicks.onrender.com', 'https://localhost']
 
 
 # Application definition
