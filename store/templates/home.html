@@ -82,7 +82,7 @@
                                                 <div class="card-body p-4">
                                                     <div class="text-center">
                                                         <!-- Product name-->
-                                                        <h5 class="fw-bolder">{{ product.name }}</h5>
+                                                       <h5 class="fw-bolder ellipsis">{{ product.name }}</h5>
                                                         <!-- Sale -->
                                                         <!-- Product price-->
                                                         R{{ product.sale_price }}
@@ -111,7 +111,7 @@
                                                 <div class="card-body p-4">
                                                     <div class="text-center">
                                                         <!-- Product name-->
-                                                        <h5 class="fw-bolder">{{ product.name }}</h5>
+                                                        <h5 class="fw-bolder ellipsis">{{ product.name }}</h5>
                                                         <!-- Product price-->
                                                     
                                                         R{{ product.price }}
@@ -139,7 +139,7 @@
                                                 <div class="card-body p-4">
                                                     <div class="text-center">
                                                         <!-- Product name-->
-                                                        <h5 class="fw-bolder">{{ product.name }}</h5>
+                                                        <h5 class="fw-bolder ellipsis">{{ product.name }}</h5>
                                                         <!-- Sale -->
                                                         <!-- Product price-->
                                                         R{{ product.sale_price }}
@@ -168,7 +168,7 @@
                                                 <div class="card-body p-4">
                                                     <div class="text-center">
                                                         <!-- Product name-->
-                                                        <h5 class="fw-bolder">{{ product.name }}</h5>
+                                                        <h5 class="fw-bolder ellipsis">{{ product.name }}</h5>
                                                         <!-- Product price-->
                                                     
                                                         R{{ product.price }}
@@ -191,7 +191,14 @@
 
     </div>
 </div>
-
+<style>
+  .ellipsis {
+    width: 200px; /* Adjust this width as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add the ellipsis */
+  }
+</style>
         <script>
             function filterProvinces() {
                 const input = document.getElementById("filter-search");
